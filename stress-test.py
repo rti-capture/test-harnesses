@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import serial
 from optparse import OptionParser, OptionGroup 
 from time import sleep
