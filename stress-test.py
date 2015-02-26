@@ -23,7 +23,7 @@ def stress_test(device, baud, sleep_time):
     start = datetime.utcnow()
     while(True):
         pat = LED_PATTERN[i%76]
-        ser.write("A%sB%sC%s" %(chr(pat[0]), chr(pat[1]), char(pat[2])))
+        ser.write("A%sB%sC%s" %(chr(pat[0]), chr(pat[1]), chr(pat[2])))
         resp = str(ser.readline())
         if not resp.startswith("OK"):
             print "ERROR: %s" % resp
